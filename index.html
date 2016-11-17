@@ -1,0 +1,531 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>girldevelopit-reveal.js - The GDI HTML Presentation Framework</title>
+
+		<meta name="description" content="Girl Develop It framework for easily creating beautiful presentations using HTML in GDI theme. Forked from Hakim El Hattab's reveal.js">
+		<meta name="author" content="Girl Develop It">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/simple.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<!-- light editor<link rel="stylesheet" href="lib/css/light.css">-->
+		<!-- dark editor--><link rel="stylesheet" href="lib/css/dark.css">
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>f
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!-- If use the PDF print sheet so students can print slides-->
+
+		<link rel="stylesheet" href="css/print/pdf.css" type="text/css" media="print">
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+        <!-- Opening -->
+				<section>
+					<h3>Photoshop for Web Design</h3>
+										<img class="no-shadow" src="images/gdi_logo_badge.png" alt="" />
+				</section>
+								<section>
+										<h2>Welcome!</h2>
+										<div class="left-align">
+												<p>Girl Develop It is here to provide affordable and accessible programs to learn software through mentorship and hands-on instruction.</p>
+												<p>Some "rules"</p>
+												<ul>
+														<li>We are here for you!</li>
+														<li>Every question is important</li>
+														<li>Help each other</li>
+														<li>Have fun</li>
+												</ul>
+										</div>
+								</section>
+
+								<section>
+										<h2>Well, hello there!</h2>
+										<p>I'm happy to have you here.</p>
+										<p>Let's take a few minutes and get to know each other.</p>
+										<br>
+										<div class="left-align">
+												<ul>
+														<li>Who are you?</li>
+														<li>What do you hope to get out of the class?</li>
+														<li>If you could have any superpower, what would it be?</li>
+												</ul>
+										</div>
+								</section>
+
+								<section>
+										<h2>Day 1: Getting comfy</h2>
+										<ul>
+												<li class="fragment">Why Photoshop?</li>
+												<li class="fragment">Setting up your workspace</li>
+												<li class="fragment">File types, saving for web</li>
+												<li class="fragment">Layer organization</li>
+										</ul>
+									</section>
+
+									<section>
+											<h2>Day 2: The new stuff</h2>
+											<ul>
+													<li class="fragment">Artboards (FTW!)</li>
+													<li class="fragment">Saving from layers</li>
+													<li class="fragment">Layer comps</li>
+											</ul>
+										</section>
+
+
+								<section>
+										<h2>What to expect</h2>
+										<ul>
+												<li>This is a survey of a very complex, multi-use program</li>
+												<li class="fragment">I hope you'll get a better sense of the features and applications for web</li>
+												<li class="fragment">I don't know everything, and neither will you</li>
+												<li class="fragment">Have fun! Bang around and mess with features! Ask questions!</li>
+										</ul>
+								</section>
+
+								<section>
+
+										<h2>Some "Fancy" Lingo</h2>
+										<div>
+											<p class="fragment">Well...</p>
+											<p class="fragment">... it turns out there isn't much to learn, terminology-wise.</p>
+											<br>
+												<p class="fragment"><strong>PSD</strong>: The file extension for a Photoshop files.</p>
+												<br>
+												<p class="fragment">We'll cover other terms as we get to them.</p>
+										</div>
+
+								</section>
+
+								<section>
+										<h2>Why Photoshop?</h2>
+										<img class="no-shadow" src="images/photoshop-icon.png" alt="" />
+										<aside class="notes">
+											<p>Photoshop was originally created as a photo editing program, hence the name.</p>
+											<p>It is not free, but it's affordable now.</p>
+											<p>Adobe's subscription model</p>
+										</aside>
+								</section>
+
+								<section>
+										<h2>Raster vs. Vector</h2>
+										<div style="width: 48%; margin-right: 2%; float: left; text-align: left;">
+												<p class="fragment">Raster:</p>
+												<ul class="fragment">
+														<li>Dot-based</li>
+														<li>Dots = pixels (sometimes)</li>
+														<li>Cannot resize without quality loss</li>
+														<li>GIF, JPG, PNG</li>
+														<li>Photoshop</li>
+												</ul>
+										</div>
+										<div style="width: 50%; float: left; text-align: left;">
+												<p class="fragment">Vector:</p>
+												<ul class="fragment">
+														<li>Math-based (!)</li>
+														<li>Uses geometry to create graphics (!)</li>
+														<li>Infinitely resize while maintaining quality</li>
+														<li>SVG, EPS</li>
+														<li>Illustrator</li>
+												</ul>
+										</div>
+										<aside class="notes">
+											<p>Vector graphics can be infinitely resized (using appropriate programs, of course) without losing image quality/ sharpness.</p>
+											<p>Raster graphics get pixelated when you zoom in on them.</p>
+											<p>Photoshop was co-opted for web use to create precise mockups of websites in part because it's a raster graphics program, which translates nicely to the web's pixels. When we set the program to use pixels as the units, it's set up to be equivalent to the way we use sizing on the web.</p>
+										</aside>
+								</section>
+
+								<section>
+										<h2>Photoshop Alternatives</h2>
+										<div class="left-align">
+												<p class="fragment">It's kind of hard to get away from Photoshop but some people do! They use:</p>
+												<ul>
+													<li class="fragment">Illustrator</li>
+													<li class="fragment">Fireworks</li>
+													<li class="fragment">HTML and CSS right in the browser ("designing in the browser")</li>
+													<li class="fragment">Web-based prototyping tools (InVision, Adobe's Edge suite)</li>
+													<li class="fragment"><a href="http://gimp.org" target="_blank">Gimp</a> (popular open source alternative)</li>
+											 </ul>
+										</div>
+								</section>
+
+								<section>
+									<h1>Getting Around Photoshop</h1>
+								</section>
+
+								<section>
+									<h2>Units &amp; Settings</h2>
+								</section>
+
+								<section>
+										<h3>Preferences</h3>
+										<p class="fragment">Under the Photoshop menu.</p>
+										<ul>
+												<li class="fragment">Units &amp; Rulers</li>
+												<li class="fragment">Guides &amp; Grid</li>
+										</ul>
+								</section>
+
+								<section>
+									<h2>Toolbar</h2>
+								</section>
+
+								<section>
+									<h2>Panels</h2>
+								</section>
+
+								<section>
+									<h2>Workspaces</h2>
+								</section>
+
+								<section>
+									<h3>are...</h3>
+									<p class="fragment">Saved arrangements of:</p>
+									<ul>
+											<li class="fragment">tools</li>
+											<li class="fragment">tool panels</li>
+											<li class="fragment">keyboard shortcuts</li>
+											<li class="fragment">menus</li>
+									</ul>
+									<br><br>
+									<p class="fragment">Window > Workspace</p>
+								</section>
+
+							<section>
+								<h3>Roll your own!</h3>
+								<p>Take a few minutes to customize your workspace</p>
+							</section>
+
+							<section>
+									<h2>Break time</h2>
+							</section>
+
+							<section>
+									<h2>Creating and working with actual FILES!</h2>
+							</section>
+
+							<section>
+								<p>But first...</p>
+								<h2>Shortcuts!</h2>
+							</section>
+
+							<section>
+								<img src="images/shortcuts.png" alt="">
+							</section>
+
+							<section>
+								<h3>New Files</h3>
+								<img class="no-shadow" src="images/new-document.png" alt="" />
+								<aside class="notes">
+									<ul>
+											<li>More options than before (artboards)</li>
+											<li>Make sure you're using pixels</li>
+											<li>Resolution 72 pixels/ inch is (still) great</li>
+											<li>Note: Color mode, BG Contents, etc</li>
+									</ul>
+								</aside>
+							</section>
+
+							<section>
+									<h2>Grids &amp; Guides</h3>
+									<ul>
+											<li class="fragment">Grid systems (<a href="http://960.gs/" target="_blank">960</a>, <a href="http://www.1140px.com/" target="_blank">1140</a>, <a href="http://www.thegridsystem.org/tags/photoshop/" target="_blank">various other templates</a>)</li>
+											<li class="fragment">Guides - GuideGuide</li>
+											<li class="fragment">Smart guides</li>
+									</ul>
+							</section>
+
+							<section>
+								<h2>Your turn</h2>
+								<p>Set up some grids for a layout:</p>
+								<ul>
+									<li>960px wide</li>
+									<li>6 columns</li>
+									<li>10px gutter</li>
+								</ul>
+							</section>
+
+								<section>
+									<h2>Layer Organization</h2>
+										<ul>
+												<li class="fragment">Group and group some more</li>
+												<li class="fragment">Use clear names</li>
+												<li class="fragment">Get rid of the cruft</li>
+												<li class="fragment">Consolidate, within reason</li>
+												<li class="fragment">Repeat yourself</li>
+										</ul>
+							 </section>
+
+							 <section>
+							 	<h2>Image manipulation in 5 slides</h2>
+							 </section>
+
+							 <section>
+							 	<h2>1. Effects</h2>
+								<ul>
+									<li class="fragment">Filters vs Layer styles</li>
+									<li class="fragment">Destructive vs non</li>
+								</ul>
+							 </section>
+
+							 <section>
+							 	<h2>2. Smart Objects</h2>
+								<p>They're your friends</p>
+							 </section>
+
+							 <section>
+							 	<h2>3. Placing images</h2>
+							 </section>
+
+							 <section>
+							 	<h2>4. Blending modes</h2>
+							 </section>
+
+							 <section>
+							 	<h2>5. Layer masks</h2>
+								<ul>
+									<li class="fragment">Avoids destructive editing</li>
+									<li class="fragment">Make sure you select the mask when editing</li>
+									<li class="fragment">White/Black brush</li>
+									<li class="fragment">Lots more. Google's your friend!</li>
+								</ul>
+							 </section>
+
+							 <section>
+							 	<h1>End of Day 1!</h1>
+							 </section>
+
+							 <!-- Day 2 starts here -->
+
+							 <section>
+							 	<h1>Day 2</h1>
+								<h2>Welcome back!</h2>
+							 </section>
+
+							 <section>
+								<h2>The really exciting stuff</h2>
+								<p>New features in CC 2015:</p>
+								<ul class="fragment">
+									<li>Artboards!</li>
+									<li>Layer comps (ok, not so new)</li>
+									<li>Exporting from layers</li>
+								</ul>
+
+							 </section>
+
+							 <section>
+							 	<h2>Our files for today:</h2>
+								<ul>
+									<li>Everything in the "images" folder</li>
+									<li>VoteNorbert.psd</li>
+								</ul>
+							 </section>
+
+							 <section>
+							 	<h1>Artboards</h1>
+							 </section>
+
+							 <section>
+							 	<h2>What's the big deal?</h2>
+								<ul>
+									<li class="fragment">Good for web comps</li>
+									<li class="fragment">Device sizes baked in</li>
+									<li class="fragment">Better than switching between files</li>
+								</ul>
+							 </section>
+
+							 <section>
+							 	<h2>Exercise time!</h2>
+								<p>Open VoteNorbert.psd</p>
+								<p>Create a new artboard for an iPhone 6</p>
+								<p>Notice the dimensions. What's up with that?</p>
+							 </section>
+
+							 <section>
+							 	<h1>Layer Comps</h1>
+							 </section>
+
+							 <section>
+							 	<h2>What's the big deal?</h2>
+								<ul>
+									<li class="fragment">Many versions, same file</li>
+									<li class="fragment">Same layers</li>
+									<li class="fragment">Keep track of individual properties</li>
+								</ul>
+
+							 </section>
+
+							 <section>
+							 	<h2>Your turn</h2>
+								<ul>
+									<li>Create two new layer comps</li>
+									<li>Change something on your first comp</li>
+									<li>Make sure you apply!</li>
+									<li>Make another change on the 2nd comp, apply</li>
+									<li>Make sure they're different!</li>
+								</ul>
+							 </section>
+
+							 <section>
+							 	<h1>Exporting from Layers</h1>
+							 </section>
+
+							 <section>
+							 	<h2>What's the big deal?</h2>
+								<ul>
+									<li class="fragment">No more slicing!</li>
+									<li class="fragment">NO MORE SLICING!</li>
+									<li class="fragment">Save in all formats, sizes</li>
+									<li class="fragment">Here's how it works:</li>
+								</ul>
+							 </section>
+
+							 <section>
+							 	<h2>1. Turn it on</h2>
+
+								<ol>
+									<li>File > Generate > Image Assets</li>
+									<li>Rename the layer to what the file should be named</li>
+									<li>Easy? There's a bit more:</li>
+								</ol>
+								<br />
+
+							</section>
+
+							<section>
+								<h2>2. Give the file an extension</h2>
+								<br />
+								<p>.jpg, .png(8, 24, or 32), .svg. gif</p>
+								<p>Save more than one file by separating them with commas:</p>
+								<br />
+								<p class="fragment"><strong>file.gif, file.png, file.jpg</strong> saves 3 different files</p>
+								<p class="fragment"><strong>file.png8, file.png24, file.png32</strong></p>
+
+							</section>
+
+							<section>
+								<h2>3. Give it a size BEFORE the name</h2>
+								<p>% works best, but you can give it dimensions (h, w):</p>
+								<br />
+								<p class="fragment"><strong>200% file.png</strong></p>
+								</p>
+							</section>
+
+							<section>
+								<h2>4. Define the quality</h2>
+								<br>
+								<p>For JPG, add the quality directly after the extension, no spaces. Use 1-10 or 1%-100%</p>
+								<br />
+								<p class="fragment"><strong>file.jpg60%</strong></p>
+
+							</section>
+
+							 <section>
+							 	<h2>Your turn</h2>
+								<ul>
+									<li>Save the "logo" layer as a PNG32</li>
+									<li>Save the "video" <em>group</em> as a JPG at 60%</li>
+									<li>Save the logo again as .svg, PNG32 at 200%</li>
+								</ul>
+							 </section>
+
+							 <section>
+								 <h2>Let's talk SVG</h2>
+								 <ul>
+									 <li class="fragment">All the cool kids are doing it</li>
+									 <li class="fragment">It's a vector format that browsers can understand</li>
+									 <li class="fragment">No more blurry logos/icons!</li>
+								 </ul>
+							 </section>
+
+							 <section>
+								 <p>Speaking of SVG...</p>
+							 	<h2 class="fragment">A word about mobile</h2>
+								<ul>
+									<li class="fragment">Retina screens</li>
+									<li class="fragment">Think responsive (don't be too rigid)</li>
+									<li class="fragment"></li>
+								</ul>
+							 </section>
+
+								<section>
+									<h2>Questions?</h2>
+									<div style = "font-size:1200%; height:100%; margin-top:40%" class ="blue">?
+										<div class ="clear"></div></div>
+								</section>
+
+								<section>
+									<h2>Feedback Me!</h2>
+									<p>Please visit</p>
+									<code style="display: block;margin:20px 0;">http://bit.ly/gdi-photoshop</code>
+									<p>to submit your feedback about this class. It's anonymous and I really really really appreciate it.</p>
+								</section>
+
+			</div>
+  		<footer>
+        <div class="copyright">
+          Photoshop for Web Design -- Girl Develop It RDU --
+          <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></a>
+        </div>
+      </footer>
+		</div>
+
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true },
+                    { src: 'plugin/accessibility-helper/js/accessibility-helper.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

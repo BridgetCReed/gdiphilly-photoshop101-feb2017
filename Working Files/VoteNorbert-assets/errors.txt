@@ -1,2 +1,0 @@
-[Thu Sep 10 2015 22:16:33 GMT-0400 (Eastern Daylight Time)] layer "100% norbert-hero-main-12.jpg": Duplicate path: norbert-hero-main-12.jpg
-[Thu Sep 10 2015 22:16:33 GMT-0400 (Eastern Daylight Time)] layer "norbert-logo.png32": Duplicate path: norbert-logo.png
